@@ -1,0 +1,5 @@
+@media (max-width: 576px) {
+    .banner img {
+        content: url(../image/index_banner_mobile.webp);
+    }
+}

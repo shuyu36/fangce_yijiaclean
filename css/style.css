@@ -1,0 +1,179 @@
+body {
+  font-family: "Noto Sans TC", "Montserrat", sans-serif, Verdana;
+  letter-spacing: 2px;
+  background: #f2f2f2;
+  line-height: 1.5;
+  color: #000000;
+}
+
+header {
+  background-color: #ffffff;
+}
+
+section {
+  max-width: 1520px;
+  margin: 0 auto;
+}
+nav {
+  max-width: 1520px;
+  margin: auto;
+}
+.nav-link {
+  color: #212529;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #004a2f;
+}
+
+a {
+  color: #212529;
+  text-decoration: none;
+}
+
+/* --------------導覽列-------------- */
+.offcanvas {
+  display: none;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #004a2f;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0);
+}
+
+.header_media_icon {
+  display: flex;
+  gap: 10px;
+}
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+.mobile_order {
+  display: none;
+}
+
+/* img {
+    width: 100%;
+    height: auto;
+} */
+
+/* --------------index_icon介紹-------------- */
+.introduce_block {
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+}
+.introduce_icon{
+    background-color: #004a2f;
+    width: 330px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1400px) {
+  .header_logo {
+    width: 200px;
+    height: auto;
+  }
+}
+@media (max-width: 1200px) {
+  .header_logo {
+    width: 150px;
+    height: auto;
+  }
+}
+@media (max-width: 992px) {
+  .offcanvas {
+    width: 90%;
+    display: block;
+    max-width: 400px;
+  }
+
+  .btn-close {
+    background: url(../image/btn_close.svg) center/contain no-repeat;
+    width: 2em;
+    height: 1em;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    background-image: url(../image/btn_nav.svg);
+  }
+  .navbar-light .navbar-toggler {
+    border: none;
+  }
+  .offcanvas-header {
+    background-color: #004a2f;
+    height: 61px;
+  }
+  .mobile_right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .mobile_order {
+    display: block;
+    background: #004a2f;
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 30px;
+    padding: 5;
+    padding: 0px 10px;
+  }
+
+  .offcanvas-body {
+    flex-grow: 1;
+    padding: 1rem 1rem;
+    overflow-y: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .header_media_icon {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .nav-link.active {
+    color: #004a2f;
+  }
+}
+
+@media (max-width: 576px) {
+  .header_logo {
+    width: 100px;
+    height: auto;
+  }
+  .offcanvas-header {
+    height: 56px;
+  }
+}
+
+@media (max-width: 373px) {
+  .mobile_order {
+    font-size: 11px;
+  }
+}
