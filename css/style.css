@@ -3,7 +3,7 @@ body {
   letter-spacing: 2px;
   background: #f2f2f2;
   line-height: 1.5;
-  color: #000000;
+  color: #383838;
 }
 
 header {
@@ -11,11 +11,13 @@ header {
 }
 
 section {
-  max-width: 1520px;
+  max-width: 1420px;
   margin: 0 auto;
+  padding: 0 30px 30px;
+  margin-top: 50px;
 }
 nav {
-  max-width: 1520px;
+  max-width: 1420px;
   margin: auto;
 }
 .nav-link {
@@ -62,27 +64,219 @@ a {
     height: auto;
 } */
 
+/* --------------共用css-------------- */
+.block_title {
+  margin-bottom: 30px;
+}
+.p_zh::before,
+.p_zh::after {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  border-top: 2px solid #383838;
+  margin: 0 10px;
+  margin-bottom: 3px;
+}
+
+.p_zh {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+.p_en {
+  font-size: 25px;
+  text-align: center;
+}
+
 /* --------------index_icon介紹-------------- */
 .introduce_block {
   display: flex;
   justify-content: center;
-  margin-top: -50px;
+  margin-top: -100px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
-.introduce_icon{
-    background-color: #004a2f;
-    width: 330px;
-    padding: 40px 20px;
-    text-align: center;
+.introduce_icon {
+  background-color: #004a2f;
+  width: 280px;
+  padding: 40px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.introduce_icon p {
+  color: #fff;
 }
 
+.introduce_icon p:nth-child(1) {
+  font-size: 20px;
+}
+.introduce_icon p:nth-child(2) {
+  font-size: 16px;
+}
 
+/* --------------about公司簡介-------------- */
 
+.about_block {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.about_content_left,
+.about_content_right {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
 
+.about_text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 520px;
+}
 
+.about_title span {
+  padding: 3px 10px;
+  border: solid 2px #004a2f;
+  position: absolute;
+  bottom: -10px;
+  left: 90px;
+}
+.about_title {
+  position: relative;
+}
 
+.about_title img {
+  display: block; /* 讓圖片以區塊元素方式顯示 */
+}
 
+.orange_text {
+  color: #ed8f25;
+  font-size: 20px;
+  font-weight: 700;
+}
 
+@keyframes growshadow {
+  0% {
+    /* 初始狀態的樣式 */
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0) inset;
+  }
+  100% {
+    box-shadow: 0 0 300px rgba(0, 0, 0, 1) inset;
+    /* 結束狀態的樣式 */
+  }
+}
 
+/* --------------case知名案例-------------- */
+
+.btn-close {
+  background: url(../image/btn_close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-header {
+  background: #004a2f;
+  color: #fff;
+}
+
+.open_btn {
+  background: #d1d1d1;
+  padding: 5px 15px;
+  color: #383838;
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  text-align: center;
+}
+
+.open_btn:hover {
+  background: #004a2f;
+  color: #ffffff;
+}
+
+.case_block ul {
+  display: grid;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px 30px;
+}
+
+.case_block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 30px;
+  text-align: center;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  text-align: start;
+}
+
+/* --------------跑馬燈-------------- */
+.test{
+  overflow: hidden;
+}
+.logo-wall{
+  display: flex;
+
+  .logo-wrapper{
+    display: flex;
+    animation: scroll 40s linear infinite;
+
+    &:nth-child(2){
+    animation: scroll2 40s linear infinite;
+    animation-delay: -20s;
+    }
+
+    /* &.first>.logo:first-child{
+      background: blue;
+    }
+
+    &.second>.logo:first-child{
+      background: red;
+    } */
+    .logo{
+    width: 200px;
+    height: 150px;
+    margin: 0 10px;
+    border-radius: 50%;
+    /* background: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+  }
+}
+@keyframes scroll {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+@keyframes scroll2 {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-200%);
+  }
+}
 
 
 
@@ -105,12 +299,6 @@ a {
     width: 90%;
     display: block;
     max-width: 400px;
-  }
-
-  .btn-close {
-    background: url(../image/btn_close.svg) center/contain no-repeat;
-    width: 2em;
-    height: 1em;
   }
 
   .navbar-light .navbar-toggler-icon {
