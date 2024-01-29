@@ -39,25 +39,25 @@
 }
 
 .service_1 p {
-  background-image: url(/image/service_1.webp);
+  background-image: url(../image/service_1.webp);
 }
 .service_2 p {
-  background-image: url(/image/service_2.webp);
+  background-image: url(../image/service_2.webp);
 }
 .service_3 p {
-  background-image: url(/image/service_3.webp);
+  background-image: url(../image/service_3.webp);
 }
 .service_4 p {
-  background-image: url(/image/service_4.webp);
+  background-image: url(../image/service_4.webp);
 }
 .service_5 p {
-  background-image: url(/image/service_5.webp);
+  background-image: url(../image/service_5.webp);
 }
 .service_6 p {
-  background-image: url(/image/service_6.webp);
+  background-image: url(../image/service_6.webp);
 }
 .service_7 p {
-  background-image: url(/image/service_7.webp);
+  background-image: url(../image/service_7.webp);
 }
 
 @media (max-width: 1200px) {
