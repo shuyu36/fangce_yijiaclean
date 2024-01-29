@@ -1,0 +1,45 @@
+.ch_banner {
+  background-image: url(../image/contact_banner.webp);
+}
+
+.info_block {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-around;
+}
+
+.iframe_map {
+  width: 40%;
+}
+
+.info_text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+    .iframe_map {
+        width: 50%;
+    }
+    .info_text {
+        width: 50%;
+    }
+    .info_text > div:first-child > p {
+font-size: 13px;    }
+}
+
+@media (max-width: 767px) {
+    .info_block {
+        gap: 30px;
+        flex-direction: column;
+    }
+    .iframe_map {
+        width: 100%;
+    }
+    .info_text {
+        width: 100%;
+    }
+}

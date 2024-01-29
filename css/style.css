@@ -8,6 +8,7 @@ body {
 
 header {
   background-color: #ffffff;
+  /* padding: 0 20px; */
 }
 
 section {
@@ -41,6 +42,7 @@ a {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show > .nav-link {
   color: #004a2f;
+  font-weight: 700;
 }
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0);
@@ -65,6 +67,15 @@ a {
 } */
 
 /* --------------共用css-------------- */
+.ch_banner{
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .block_title {
   margin-bottom: 30px;
 }
@@ -227,19 +238,19 @@ a {
 }
 
 /* --------------跑馬燈-------------- */
-.test{
+.test {
   overflow: hidden;
 }
-.logo-wall{
+.logo-wall {
   display: flex;
 
-  .logo-wrapper{
+  .logo-wrapper {
     display: flex;
     animation: scroll 40s linear infinite;
 
-    &:nth-child(2){
-    animation: scroll2 40s linear infinite;
-    animation-delay: -20s;
+    &:nth-child(2) {
+      animation: scroll2 40s linear infinite;
+      animation-delay: -20s;
     }
 
     /* &.first>.logo:first-child{
@@ -249,38 +260,73 @@ a {
     &.second>.logo:first-child{
       background: red;
     } */
-    .logo{
-    width: 200px;
-    height: 150px;
-    margin: 0 10px;
-    border-radius: 50%;
-    /* background: black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .logo {
+      width: 200px;
+      height: 150px;
+      margin: 0 10px;
+      border-radius: 50%;
+      /* background: black; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
 @keyframes scroll {
   0% {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
   100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 @keyframes scroll2 {
   0% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
-      transform: translateX(-200%);
+    transform: translateX(-200%);
   }
 }
 
+footer {
+  background: #004a2f;
+  color: #fff;
+  padding: 30px 20px;
+  margin-top: 50px;
+}
 
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #ed8f25;
+}
 
+.footer_block {
+  display: flex;
+  max-width: 1020px;
+  justify-content: space-between;
 
+  gap: 10px;
+  margin-top: 0;
+  padding: 0;
+}
+
+.footer_logo img {
+  margin-bottom: 10px;
+}
+
+.footer_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer_icon {
+  display: flex;
+  gap: 10px;
+}
 
 @media (max-width: 1400px) {
   .header_logo {
@@ -293,8 +339,12 @@ a {
     width: 150px;
     height: auto;
   }
+
+  .ch_banner {
+    height: 300px;
+  }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .offcanvas {
     width: 90%;
     display: block;
@@ -347,16 +397,61 @@ a {
 
   .nav-link.active {
     color: #004a2f;
+    font-weight: 700;
   }
+
+  /* 公司理念 */
+  .about_text {
+    max-width: 400px;
+  }
+  /* 知名案例 */
+  .case_block ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .ch_banner{
+    height: 200px;
+  }
+
+.case_block ul {
+  grid-template-columns: 1fr;
+}
+
+.about_content_left {
+  flex-direction: column-reverse;
+}
+.about_content_right {
+  flex-direction: column;
+}
+
+.footer_block {
+  gap: 20px;
+
+  flex-direction: column;
+  align-items: center;
+}
 }
 
 @media (max-width: 576px) {
   .header_logo {
-    width: 100px;
+    width: 120px;
     height: auto;
   }
   .offcanvas-header {
     height: 56px;
+  }
+  .orange_text {
+    font-size: 18px;
+  }
+  .mobile_order {
+    padding: 0px 5px;
+    font-size: 10px;
+  }
+
+  footer {
+    font-size: 14px;
   }
 }
 

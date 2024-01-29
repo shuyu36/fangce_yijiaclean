@@ -1,0 +1,8 @@
+/* --------------banner-------------- */
+
+.ch_banner{
+    background-image: url(../image/case_banner.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

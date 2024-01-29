@@ -1,0 +1,43 @@
+.ch_banner {
+  background-image: url(../image/about_banner.webp);
+}
+
+.ab_title {
+  color: #004a2f;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about_info{
+    max-width: 1020px;
+}
+
+
+.about_info ul{
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 100px; */
+}
+.about_info li{
+    max-width: 200px;
+    text-align: center;
+}
+
+
+
+@media (max-width:1200px){
+    .about_info li {
+        max-width: 160px;
+        justify-content: space-around;
+    }
+    .about_info ul {
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+}
+    

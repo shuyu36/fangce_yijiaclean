@@ -1,0 +1,40 @@
+.ch_banner {
+  background-image: url(../image/service_banner.webp);
+}
+
+.service_introduce {
+  max-width: 850px;
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 0 auto;
+  border-bottom: #004A2F solid 2px;
+  padding: 10px;
+}
+
+.service_introduce p:nth-of-type(1) {
+  color: #ed8f25;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.service_introduce p:nth-of-type(3) {
+  color: #004A2F;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+@media (max-width: 1200px) {
+  .service_introduce{
+    font-size: 14px;
+  }
+  .service_introduce p:nth-of-type(1) {
+    font-size: 18px;
+
+  }
+  .service_introduce p:nth-of-type(3) {
+
+    font-size: 16px;
+
+}
+}

@@ -1,10 +1,15 @@
 /* --------------service服務項目-------------- */
 
 .service_block {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 80px 30px;
+  justify-items: center;
+}
+
+.service_block .service_7 {
+  grid-column-start: 2;
 }
 
 .service_img p {
@@ -55,6 +60,32 @@
   background-image: url(/image/service_7.webp);
 }
 
+@media (max-width: 1200px) {
+  .service_img p {
+    width: 280px;
+    height: 140px;
+    line-height: 140px;
+  }
+}
+@media (max-width: 991px) {
+  .service_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 767px) {
+  .service_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 30px
+  }
+  
+}
 @media (max-width: 576px) {
   .banner img {
     content: url(../image/index_banner_mobile.webp);

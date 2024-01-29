@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <title>億嘉清潔</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              class="header_logo"
+              src="./image/LOGO.svg"
+              alt="億嘉LOGO"
+              width="263px"
+              height="61px"
+          /></a>
+          <div class="mobile_right">
+            <a class="mobile_order" href="#">立刻預約 / CONTACT</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="index.html">首頁</a>
+              <a class="nav-link" href="about.html">公司簡介</a>
+              <a class="nav-link" href="case.html">知名案例</a>
+              <a class="nav-link" href="service.html">服務項目</a>
+              <a class="nav-link active" href="contact.html">免費諮詢預約</a>
+            </div>
+
+            <div>
+              <div class="header_media_icon">
+                <a href="tel:0933215628" target="_blank ">
+                  <img
+                    src="./image/phone.svg"
+                    alt="電話icon"
+                    width="30px"
+                    height="30px"
+                  />
+                </a>
+                <a
+                  href="https://maps.app.goo.gl/kkndgGuQeSwEAFHV9"
+                  target="_blank"
+                >
+                  <img
+                    src="./image/map.svg"
+                    alt="地圖icon"
+                    width="30px"
+                    height="30px"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/p/%E5%84%84%E5%98%89%E6%B8%85%E6%BD%94%E5%85%AC%E5%8F%B8-100066669608655/?paipv=0&eav=Afb2znYxrr47xzvRPsdULkrzSgdqOVXFaG3BZl7NE80h8kDxgnvlsm5pNKFVdaSMV3U&_rdr"
+                  target="_blank"
+                >
+                  <img
+                    src="./image/fb.svg"
+                    alt="臉書icon"
+                    width="30px"
+                    height="30px"
+                /></a>
+                <a
+                  href="#"
+                  style="
+                    background: #004a2f;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    color: #fff;
+                  "
+                  >立刻預約 / CONTACT</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel"></h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <a class="nav-link" aria-current="page" href="index.html">首頁</a>
+            <a class="nav-link" href="about.html">公司簡介</a>
+            <a class="nav-link" href="case.html">知名案例</a>
+            <a class="nav-link" href="service.html">服務項目</a>
+            <a class="nav-link active" href="#">免費諮詢預約</a>
+          </div>
+          <div class="header_media_icon">
+            <div style="display: flex; gap: 20px; justify-content: center">
+              <a href="tel:0933215628" target="_blank ">
+                <img
+                  src="./image/phone.svg"
+                  alt="電話icon"
+                  width="30px"
+                  height="30px"
+                />
+              </a>
+              <a
+                href="https://maps.app.goo.gl/kkndgGuQeSwEAFHV9"
+                target="_blank"
+              >
+                <img
+                  src="./image/map.svg"
+                  alt="地圖icon"
+                  width="30px"
+                  height="30px"
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/p/%E5%84%84%E5%98%89%E6%B8%85%E6%BD%94%E5%85%AC%E5%8F%B8-100066669608655/?paipv=0&eav=Afb2znYxrr47xzvRPsdULkrzSgdqOVXFaG3BZl7NE80h8kDxgnvlsm5pNKFVdaSMV3U&_rdr"
+                target="_blank"
+              >
+                <img
+                  src="./image/fb.svg"
+                  alt="臉書icon"
+                  width="30px"
+                  height="30px"
+              /></a>
+            </div>
+
+            <a
+              href="#"
+              style="
+                background: #004a2f;
+                padding: 5px 10px;
+                border-radius: 5px;
+                color: #fff;
+                text-align: center;
+              "
+              >立刻預約 / CONTACT</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-----------------topBanner----------------->
+    <article class="banner ch_banner">
+      <div class="block_title banner_title">
+        <p class="p_en">CONTACT</p>
+        <p class="p_zh">免費諮詢預約</p>
+      </div>
+    </article>
+
+    <!-----------------info相關資訊----------------->
+    <section class="info_block">
+      <div class="ratio ratio-4x3 iframe_map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14458.292301475181!2d121.5472807!3d25.0485585!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab039d33b2fb%3A0x915af9feb867d1a4!2z5qKB5rmv6Imv5rmv5riv5byP54Wy5rmvLumNi-eJqS3ppIrnlJ_oirHohqDpm57mua8g6aCC57Sa5ZKM54mb5rW36a6u54Gr6Y2L!5e0!3m2!1szh-TW!2stw!4v1694586258108!5m2!1szh-TW!2stw"
+          width="100%"
+          height="80%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="info_text">
+          <div>
+            <p>
+              您或您的家人因為體力不夠或是年紀稍長無法打掃起居空間嗎？<br />
+              您還在為了打掃家裡、辦公室而浪費難得的休假或假期嗎？<br />
+              為什麼花了那麼多心力和體力去打掃總是不夠乾淨？<br />
+              辦公室東西多、空間大，每次打掃起來都又累又久！<br />
+              把時間留給自己、您心愛的人和想做的事情！<br />
+              清潔的事就找專業高效率、值得信賴的億嘉清潔公司！
+            </p>
+          </div>
+          <div>
+            <p style="color: #004a2f; font-size: 30px; font-weight: 700">
+              INFORMATION
+            </p>
+          </div>
+          <div>
+            <a href="https://maps.app.goo.gl/uhTG9rWjBD7Vt6NB7" target="_blank">
+              地址：台北市文山區木新路三段352巷10號</a
+            >
+            <br />
+
+            <a href="tel:0229156478" target="_blank">(02)2915-6478</a>
+            <br />
+
+            <a href="tel:0933215628" target="_blank">行動電話：0933-215-628 </a>
+            <br />
+
+            <a href="tel:0222349994" target="_blank"> 傳真：(02)2234-9994</a>
+            <br />
+
+            <a href="mailto:lin29156478@yahoo.com.tw">
+              E-mail：lin29156478@yahoo.com.tw</a
+            >
+          </div>
+      </div>
+    </section>
+
+    <footer>
+      <section class="footer_block">
+        <div class="footer_logo">
+          <img
+            src="./image/LOGO_footer.svg"
+            alt="LOGO"
+            width="300px"
+            height="70px"
+          />
+          <p>
+            【億嘉清潔公司】<br />
+            最真誠的服務態度，給您最放心的服務品質<br />
+            用心對待每一位客戶，給您最優質且效率的服務！
+          </p>
+        </div>
+
+        <div class="footer_info">
+          <!-- icon -->
+          <div class="footer_icon">
+            <a href="tel:0933215628" target="_blank">
+              <img
+                src="./image/phone_footer.svg"
+                alt="電話icon"
+                width="30px"
+                height="30px"
+              />
+            </a>
+            <a href="https://maps.app.goo.gl/uhTG9rWjBD7Vt6NB7" target="_blank">
+              <img
+                src="./image/map_footer.svg"
+                alt="地圖icon"
+                width="30px"
+                height="30px"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100066669608655"
+              target="_blank"
+            >
+              <img
+                src="./image/fb_footer.svg"
+                alt="臉書icon"
+                width="30px"
+                height="30px"
+              />
+            </a>
+          </div>
+          <!-- 內容 -->
+          <div>
+            <a href="https://maps.app.goo.gl/uhTG9rWjBD7Vt6NB7" target="_blank">
+              地址：台北市文山區木新路三段352巷10號</a
+            >
+            <br />
+
+            <a href="tel:0229156478" target="_blank">(02)2915-6478</a>
+            <br />
+
+            <a href="tel:0933215628" target="_blank">行動電話：0933-215-628 </a>
+            <br />
+
+            <a href="tel:0222349994" target="_blank"> 傳真：(02)2234-9994</a>
+            <br />
+
+            <a href="mailto:lin29156478@yahoo.com.tw">
+              E-mail：lin29156478@yahoo.com.tw</a
+            >
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
