@@ -27,6 +27,14 @@
   line-height: 175px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
+.introduce_icon a:hover{
+  color: #fff;
+
+}
+.introduce_icon a{
+  color: #fff;
+
+}
 
 .service_img p:hover {
   -webkit-animation: growshadow 0.5s forwards;
