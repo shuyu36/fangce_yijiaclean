@@ -8,9 +8,9 @@
   justify-items: center;
 }
 
-.service_block .service_7 {
+/* .service_block .service_7 {
   grid-column-start: 2;
-}
+} */
 
 .service_img p {
   color: #fff;
@@ -66,6 +66,12 @@
 }
 .service_7 p {
   background-image: url(../image/service_7.webp);
+}
+.service_8 p {
+  background-image: url(../image/service_8.webp);
+}
+.service_9 p {
+  background-image: url(../image/service_9.webp);
 }
 
 @media (max-width: 1200px) {
